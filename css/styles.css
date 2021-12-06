@@ -88,18 +88,9 @@ img {
   color: var(--color-blu-);
 }
 /* site-contact */
-.link-svg {
-  width: 16px;
-  height: 12px;
-  fill: black;
-  background-color: brown;
-}
+
 .site-contact .item + .item {
   margin-left: 50px;
-}
-.site-contact .item {
-  display: flex;
-  outline: 1px solid black;
 }
 .site-contact {
   display: flex;
@@ -110,13 +101,27 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .link-contact {
   color: var(--color-silver);
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
-
 .link-contact:hover {
   color: var(--color-blu-);
+}
+
+.link-svg-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  align-items: center;
+}
+.link-svg-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
 }
 
 /* =======studio======= */
