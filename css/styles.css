@@ -91,6 +91,10 @@ img {
 .site-contact .item + .item {
   margin-left: 50px;
 }
+.item {
+  display: flex;
+  align-items: center;
+}
 .site-contact {
   display: flex;
   margin-left: auto;
@@ -99,6 +103,11 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.link-contact .item-svg {
+  width: 16px;
+  height: 12px;
+  /* margin-right: 10px; */
 }
 .link-contact {
   color: var(--color-silver);
@@ -112,7 +121,7 @@ img {
 /* hero-studio */
 .hero-studio {
   text-align: center;
-  background-color: #2f303a;
+  /* background-color: #2f303a; */
   /* border: 1px solid tomato; */
 }
 .nav-studio {
@@ -150,6 +159,25 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+}
+.hero-pic {
+  max-width: 1600px;
+  height: 600px;
+  outline: 1px solid black;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero1.jpg);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /* features-studio */
 /* .features-studio {
