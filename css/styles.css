@@ -88,12 +88,18 @@ img {
   color: var(--color-blu-);
 }
 /* site-contact */
+.link-svg {
+  width: 16px;
+  height: 12px;
+  fill: black;
+  background-color: brown;
+}
 .site-contact .item + .item {
   margin-left: 50px;
 }
-.item {
+.site-contact .item {
   display: flex;
-  align-items: center;
+  outline: 1px solid black;
 }
 .site-contact {
   display: flex;
@@ -104,18 +110,15 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.link-contact .item-svg {
-  width: 16px;
-  height: 12px;
-  /* margin-right: 10px; */
-}
 .link-contact {
   color: var(--color-silver);
   text-decoration: none;
 }
+
 .link-contact:hover {
   color: var(--color-blu-);
 }
+
 /* =======studio======= */
 /* main-studio */
 /* hero-studio */
