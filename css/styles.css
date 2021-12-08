@@ -40,7 +40,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 1px solid tomato; */
 }
 /* header-style-global */
 .header-line {
@@ -49,7 +48,6 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
-  /* border-bottom: 1px solid #e5e5e5; */
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -84,10 +82,8 @@ img {
   color: var(--color-text);
   text-decoration: none;
 }
-.link-contact:hover .icon-contact,
-.link-contact:focus .icon-contact {
+.item .link:hover {
   color: var(--color-blu-);
-  fill: var(--color-blu-);
 }
 /* site-contact */
 
@@ -114,9 +110,9 @@ img {
 .link-svg-mail {
   width: 16px;
   height: 12px;
-
   margin-right: 10px;
   align-items: center;
+  fill: var(--color-silver);
 }
 
 .link-svg-smartphone {
@@ -125,17 +121,18 @@ img {
   margin-right: 10px;
   fill: var(--color-silver);
 }
-.icon-contact {
-  fill: var(--color-silver);
+.link-contact:hover .link-svg-mail,
+.link-contact:focus .link-svg-mail {
+  fill: var(--color-blu-);
+}
+.link-contact:hover .link-svg-smartphone,
+.link-contact:focus .link-svg-smartphone {
+  fill: var(--color-blu-);
 }
 .link-contact:hover,
-.link-contact:focus {
-  fill: var(--color-blu-);
-}
-/* .site-contact:hover {
+.link-contact:hover {
   color: var(--color-blu-);
-  fill: var(--color-blu-);
-} */
+}
 /* =======studio======= */
 /* main-studio */
 /* hero-studio */
@@ -237,6 +234,7 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+  margin-bottom: 30px;
 
   background-color: var(--color-block);
 }
@@ -304,7 +302,7 @@ img {
 }
 .studio-team-text {
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.187;
@@ -312,19 +310,36 @@ img {
   letter-spacing: 0.03em;
   color: var(--color-silver);
 }
-.item > .studio-team-item {
+.social-list {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
+
 .studio-team-item-svg {
   width: 44px;
   height: 44px;
 }
-/* .studio-team-item:hover .studio-team-item-svg {
-  color: var(--color-blu-);
+.social-link .studio-team-link {
+  display: flex;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+}
+.social-link:last-child {
+  margin-right: 0px;
+}
+.studio-team-item-svg {
+  fill: var(--color-white);
+}
+
+.studio-team-link .studio-team-item-svg:hover,
+.studio-team-link .studio-team-item-svg:focus {
   fill: var(--color-blu-);
-} */
+}
 
 /* footer-style-global */
 .footer-bgcolor {
