@@ -223,6 +223,9 @@ img {
   margin-bottom: 30px;
   background-color: var(--color-F5F4FA-);
 }
+.features-box .icon {
+  fill: var(--color-F5F4FA-);
+}
 /* features-item */
 .studio-title {
   margin-bottom: 10px;
@@ -266,6 +269,7 @@ img {
 }
 .studio-team .item {
   width: 270px;
+  height: 428px;
   margin-right: 30px;
   margin-bottom: 94px;
 
@@ -387,7 +391,9 @@ img {
 .customers-item-svg:focus {
   fill: var(--color-blu-);
 }
-
+.link-customers {
+  padding: 23px 41.25px;
+}
 /* footer-style-global */
 .footer-bgcolor {
   background-color: #2f303a;
@@ -482,6 +488,7 @@ img {
 .button-filter {
   text-align: center;
   padding-top: 94px;
+  margin-bottom: 50px;
 }
 .btn-list {
   display: inline-flex;
@@ -511,7 +518,7 @@ img {
 /* section portfolio */
 .portfolio {
   /* text-align: center; */
-  padding-top: 94px;
+
   padding-bottom: 94px;
 }
 .portfolio .portfolio-list {
